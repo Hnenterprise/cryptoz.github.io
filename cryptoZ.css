@@ -1,5 +1,5 @@
 body {
-  max-width: 1440px;
+  max-width: 100%;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -7,7 +7,7 @@ body {
 }
 /* styling the header */
 .header_container {
-  max-width: 1440px;
+  max-width: 100%;
   position: sticky;
   top: 0;
   height: 60px;
@@ -69,7 +69,7 @@ body {
 .hamburger img {
   width: 40px;
 }
-@media (max-width: 960px) {
+@media (max-width: 600px) {
   .container_nav {
     display: none;
   }
@@ -85,14 +85,14 @@ body {
 }
 /* styling the Hero section */
 .hero_container {
-  max-width: 1440px;
+  max-width: 100%;
   height: 709px;
   background: linear-gradient(#2752e7, #0b2271);
 }
 .hero1 {
   display: flex;
   justify-content: space-evenly;
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0px 100px;
 }
 .hero2 {
@@ -211,17 +211,8 @@ button {
   margin-left: 380px;
   margin-top: 40px;
 }
-.ellipse_container{
 
-}
-.ellipse1{
-  z-index: 0;
-  width: 1000px;
-  height: 300px;
-  border-radius: 50%;
-  border: 1px solid grey;
-}
-@media (max-width: 960px) {
+@media (max-width: 600px) {
   .hero_container {
     width: 100%;
     height: auto;
@@ -232,8 +223,9 @@ button {
     flex-direction: column;
     margin: 0px auto;
   }
+  
   .hero2 div {
-    width: 95%;
+    width: 85%;
   }
   .hero2 div h1 {
     width: 80%;
@@ -241,6 +233,7 @@ button {
     margin-bottom: 70px;
   }
   .hero2 div p {
+    margin-top: 110px;
     margin-bottom: 40px;
     width: 80%;
     text-align: center;
@@ -262,13 +255,16 @@ button {
     color: #ffffff;
   }
   .coverter_container {
-    width: 100%;
-    height: 481px;
+    width: 95%;
+    height: 461px;
     opacity: 80%;
     margin: 20px auto;
   }
   .converter_wrap2 {
-    width: 80%;
+    width: 70%;
+  }
+  .amount{
+    width: 50%;
   }
 }
 
@@ -880,6 +876,7 @@ button {
   max-width: 1200px;
   display: flex;
   gap: 20px;
+
 }
 .child {
   width: 245px;
@@ -905,6 +902,11 @@ button {
 .myflex div:nth-child(2) p:nth-child(1) {
   margin-bottom: -13px;
   font-weight: 600;
+}
+@media (max-width: 960px) {
+  .sec3_wrap2 {
+    overflow-x: auto;
+  }
 }
 
 /* before footer section */
