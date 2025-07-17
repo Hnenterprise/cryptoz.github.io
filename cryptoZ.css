@@ -1,8 +1,9 @@
-body {
+html, body {
+  width: 100vw;
   max-width: 100%;
-  padding: 0;
-  margin: 0;
   overflow-x: hidden;
+}
+*, *::before, *::after {
   box-sizing: border-box;
 }
 /* styling the header */
@@ -1161,5 +1162,66 @@ button {
     font-weight: 700;
     color: #ffffff;
     text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .header_container,
+  .hero_container,
+  .logo_container,
+  .advert_container,
+  .sec2_container,
+  .sec3_container,
+  .bfooter,
+  .footer_container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    overflow-x: hidden !important;
+  }
+  .hero1,
+  .logo_wrap,
+  .users,
+  .advert_wrap,
+  .advert_wrap1,
+  .advert_wrap2,
+  .advert_wrap3,
+  .iphone_wrap,
+  .sec2_wrap1,
+  .sec2_wrap2,
+  .sec2_wrap2_1,
+  .sec2_wrap2_2,
+  .sec3_wrap1,
+  .sec3_wrap2,
+  .footer_wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    overflow-x: auto !important;
+  }
+  .sec3_wrap2 {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+  }
+  .logo_wrap {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+  }
+  .users {
+    flex-direction: column !important;
+    gap: 16px !important;
+    width: 100% !important;
+  }
+  .advert_container {
+    flex-direction: column !important;
+  }
+  .footer_wrap {
+    display: block !important;
   }
 }
