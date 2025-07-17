@@ -221,3 +221,27 @@ function convertCurrency(){
         });   
     } 
 window.addEventListener("load",convertCurrency);
+
+// Hamburger mobile menu logic
+const hamburger = document.getElementById('hamburger-menu');
+const mobileNav = document.getElementById('mobile-nav');
+const closeMobileNav = document.getElementById('close-mobile-nav');
+
+function openMobileNav() {
+  mobileNav.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeMobileNavFunc() {
+  mobileNav.classList.remove('open');
+  document.body.style.overflow = '';
+}
+if (hamburger && mobileNav && closeMobileNav) {
+  hamburger.addEventListener('click', openMobileNav);
+  closeMobileNav.addEventListener('click', closeMobileNavFunc);
+  // Optional: close menu when clicking outside
+  window.addEventListener('click', function(e) {
+    if (mobileNav.classList.contains('open') && !mobileNav.contains(e.target) && e.target !== hamburger && !hamburger.contains(e.target)) {
+      closeMobileNavFunc();
+    }
+  });
+}
